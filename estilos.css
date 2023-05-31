@@ -1,0 +1,242 @@
+*
+{
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;    
+}
+header
+{
+    display: flex;
+    background-image: url("./img/imgHeader.jpg");
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+}
+#nav ul
+{
+    display: flex;
+    list-style: none;
+}
+#nav ul li a
+{
+    text-decoration: none;
+    color: rgb(20, 180, 20);
+    margin: 0 15px;
+    padding: 3px;
+    margin-right: 80px;
+}
+#logo a img
+{
+    width: 100px;
+    height: 100px;
+    margin-left: 50px;
+}
+#titulo
+{
+    margin-top: 0;
+    background-color: #09f;        
+}
+#titulo h1
+{
+    margin-left: 40%;
+}
+#formulario
+{
+    margin-top: 0;
+    background-image: url("./img/imgFondo.jpg");
+    margin-top: 0;
+}
+#formulario #contenedor
+{
+    border: 2px solid white;
+    margin-bottom: 15px;    
+}
+#formulario #contenedor h2
+{
+    margin-left: 40%;
+}
+#formulario #contenedor #imgMarvel, #imgDC
+{
+    width: 50px;
+    height: 50px;
+}
+#formulario #contenedor input
+{
+    display: block;
+    margin-left: 40%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: lightgray;
+    width: 400px;
+    height: 20px;
+}
+#formulario #contenedor label
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    margin-left: 40%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#formulario #contenedor #editorial h2
+{
+    margin-left: 40%;
+    margin-bottom: 15px;
+}
+#formulario #contenedor #editorial input
+{
+    justify-content: center;
+}
+#botones 
+{
+    display: flex;
+    margin-left: 30%;
+}
+#botones input
+{
+    width: 150px;
+    height: 35px;
+    margin-right: 20px;
+    font-size: 15px;
+    cursor: grab;    
+}
+#botones #btnGuardar
+{
+    background-color: green;
+    color: #fff;
+}
+#botones #btnCancelar
+{
+    background-color: blue;
+    color: #fff;
+}
+#botones #btnModificar
+{
+    background-color: orange;
+    color: #fff;
+}
+#botones #btnBorrar
+{
+    background-color: red;
+    color: #fff;
+}
+#botones #btnGuardar:hover
+{
+    background-color: black;
+    color: green;
+    transition: .1s;
+}
+#botones #btnCancelar:hover
+{
+    background-color: black;
+    color: blue;
+    transition: .1s;
+}
+#botones #btnBorrar:hover
+{
+    background-color: black;
+    color: red;
+    transition: .1s;
+}
+#botones #btnModificar:hover
+{
+    background-color: black;
+    color: orange;
+    transition: .1s;
+}
+#spinner
+{
+    border: 4px solid black;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 50%;
+    border-left-color: red;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin 
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+#tabla
+{    
+    background-color: black;    
+    align-items: center;
+    margin-top: 15px;
+    margin-left: 40%;
+}
+#tabla th
+{
+    background-color: coral;
+    width: 50px;
+}
+#tabla th :nth-child(5)
+{
+    width: 20px;
+}
+#tabla tr
+{   
+    background-color: #fff;    
+}
+#tabla tr:hover
+{    
+    color: white;
+    background-color: #09f;
+}
+#tabla tr 
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+footer
+{
+    display: flex;
+    background-color: black;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+}
+footer p{
+    color: green;
+    margin-right: 20px;
+}
+
+
+
+
+
+
+
+/* PAGINA INFO */
+
+
+#tarjeta
+{
+    background-color: #09f;       
+}
+#tarjeta h1
+{
+    margin-left: 40%;
+}
+.ficha
+{
+    background-color: rgb(166, 209, 149) ;
+    width: 400px;
+    margin-bottom: 10px;
+    margin-left: 40%;    
+}
+.ficha label
+{
+    margin-right: 10px;
+    display: block;
+}

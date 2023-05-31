@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcial Laboratorio</title>
+    <link rel="stylesheet" href="./estilos.css">
+    <script src="./JS/Scripts.js" type="module" defer></script>
+</head>
+<body>
+    <!-- ENCABEZADO -->    
+    <header>
+        <div id="logo">
+            <a href="#">
+                <img src="./img/LogoCompania.png"ImagenLogo" id="ImgLogo">
+            </a>
+        </div>
+        <nav id="nav">
+            <ul>
+                <li><a href="#" onclick="seleccionar()">Home</a></li>
+                <li><a href="info.html" onclick="seleccionar()">Personajes</a></li>
+                <li><a href="#" onclick="seleccionar()">Blog</a></li>
+                <li><a href="#" onclick="seleccionar()">Contacto</a></li>                
+            </ul>                
+        </nav>        
+    </header>
+        
+    <!-- CUERPO -->
+    <section id="titulo">
+        <h1>Crud Heroes</h1>
+    </section>        
+    <form id="formulario">
+        <fieldset id="contenedor">
+            <h2>Información del SuperHeroe</h2>                    
+            <input id="lblError" value="CAMPOS INCOMPLETOS!"></input>
+            <label for="txtNombre">Nombre::</label>
+            <input type="text" id="txtNombre" placeholder="Ingrese el nombre..." >
+            <label for="txtAlias">Alias:</label>
+            <input type="text" id="txtAlias" placeholder="Ingrese el alias..." >            
+            <section id="editorial">
+                <h2>Editorial</h2>           
+                <input type="radio" id="rdbMarvel" value="Marvel" name="editorial">             
+                <label for="rdbMarvel">
+                    <img src="./img/logoMarvel.jpg" alt="ImagenMarvel" id="imgMarvel">
+                </label>
+                <input type="radio" id="rdbDC" value="DC" name="editorial">
+                <label for="rdbDC">
+                    <img src="./img/logoDC.png" alt="ImagenDC" id="imgDC">
+                </label>                                               
+            </section>
+            <label for="txtFuerza">Fuerza:</label>
+            <input type="range" id="txtFuerza">
+            <label for="txtArma">Arma:</label>
+            <select name="" id="txtArma"></select>
+        </fieldset>    
+        <section id="botones">            
+            <input type="submit" id="btnGuardar"  value="GUARDAR">
+            <span id="logoGuardar"><i class="fa-light fa-floppy-disk"></i></span>            
+            <input type="submit" id="btnModificar" value="MODIFICAR">
+            <input type="submit" id="btnBorrar" value="BORRAR">
+            <input type="submit" id="btnCancelar" value="CANCELAR">
+        </section>    
+    </form>    
+    <div id="spinner">    
+    </div>
+    <section id="tabla">        
+    </section>              
+    </section>    
+    <footer>
+        <nav id="nav">
+            <ul>
+                <li><a href="#" onclick="seleccionar()">Home</a></li>
+                <li><a href="info.html" onclick="seleccionar()">Personajes</a></li>
+                <li><a href="#" onclick="seleccionar()">Blog</a></li>
+                <li><a href="#" onclick="seleccionar()">Contacto</a></li>                
+            </ul>                
+        </nav>   
+        <p>Laboratorio III - Todos los derechos reservados &copy;</p>
+    </footer>
+</body>
+</html>
